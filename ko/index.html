@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Korean (ko) - Documentation for Mozilla localizers</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../guidelines/index.html"><strong aria-hidden="true">2.</strong> Guidelines</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../guidelines/outline.html"><strong aria-hidden="true">2.1.</strong> Style guide outline</a></li><li class="chapter-item expanded "><a href="../guidelines/example_en-us.html"><strong aria-hidden="true">2.2.</strong> Example style guide</a></li><li class="chapter-item expanded "><a href="../guidelines/firefox_marketing.html"><strong aria-hidden="true">2.3.</strong> Marketing guide to Firefox localization</a></li></ol></li><li class="chapter-item expanded "><a href="../mozilla_general/index.html"><strong aria-hidden="true">3.</strong> Mozilla general style guide</a></li><li class="chapter-item expanded "><a href="../af/index.html"><strong aria-hidden="true">4.</strong> Africaans (af)</a></li><li class="chapter-item expanded "><a href="../ar/index.html"><strong aria-hidden="true">5.</strong> Arabic (ar)</a></li><li class="chapter-item expanded "><a href="../hy-AM/index.html"><strong aria-hidden="true">6.</strong> Armenian (hy-AM)</a></li><li class="chapter-item expanded "><a href="../bm/index.html"><strong aria-hidden="true">7.</strong> Bambara (bm)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../bm/general.html"><strong aria-hidden="true">7.1.</strong> General Style Considerations</a></li><li class="chapter-item expanded "><a href="../bm/aaa.html"><strong aria-hidden="true">7.2.</strong> Abbreviations, Acronyms, Articles, and Loan Words</a></li><li class="chapter-item expanded "><a href="../bm/loanwords.html"><strong aria-hidden="true">7.3.</strong> Non-translated and Loan Words</a></li><li class="chapter-item expanded "><a href="../bm/wl.html"><strong aria-hidden="true">7.4.</strong> Word-level Guidelines</a></li><li class="chapter-item expanded "><a href="../bm/sl.html"><strong aria-hidden="true">7.5.</strong> Sentence-level Guidelines</a></li><li class="chapter-item expanded "><a href="../bm/appendix.html"><strong aria-hidden="true">7.6.</strong> Appendix</a></li></ol></li><li class="chapter-item expanded "><a href="../bn-BD/index.html"><strong aria-hidden="true">8.</strong> Bengali, Bangladesh (bn-BD)</a></li><li class="chapter-item expanded "><a href="../my/index.html"><strong aria-hidden="true">9.</strong> Burmese (my)</a></li><li class="chapter-item expanded "><a href="../zh-CN/index.html"><strong aria-hidden="true">10.</strong> Chinese, Simplified (zh-CN)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../zh-CN/sumo.html"><strong aria-hidden="true">10.1.</strong> SUMO Style Guide</a></li></ol></li><li class="chapter-item expanded "><a href="../zh-TW/index.html"><strong aria-hidden="true">11.</strong> Chinese, Traditional (zh-TW)</a></li><li class="chapter-item expanded "><a href="../cs/index.html"><strong aria-hidden="true">12.</strong> Czech (cs)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../cs/general.html"><strong aria-hidden="true">12.1.</strong> General Style Guide · Czech (cs)</a></li><li class="chapter-item expanded "><a href="../cs/glossary.html"><strong aria-hidden="true">12.2.</strong> Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="../nl/index.html"><strong aria-hidden="true">13.</strong> Dutch (nl)</a></li><li class="chapter-item expanded "><a href="../eo/index.html"><strong aria-hidden="true">14.</strong> Esperanto (eo)</a></li><li class="chapter-item expanded "><a href="../fi/index.html"><strong aria-hidden="true">15.</strong> Finnish (fi)</a></li><li class="chapter-item expanded "><a href="../fr/index.html"><strong aria-hidden="true">16.</strong> French (fr)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../fr/firefox_marketing.html"><strong aria-hidden="true">16.1.</strong> Marketing guide to Firefox localization</a></li></ol></li><li class="chapter-item expanded "><a href="../de/index.html"><strong aria-hidden="true">17.</strong> German (de)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../de/firefox_marketing.html"><strong aria-hidden="true">17.1.</strong> Marketing guide to Firefox localization</a></li></ol></li><li class="chapter-item expanded "><a href="../ha/index.html"><strong aria-hidden="true">18.</strong> Hausa (ha)</a></li><li class="chapter-item expanded "><a href="../hi-IN/index.html"><strong aria-hidden="true">19.</strong> Hindi (hi-IN)</a></li><li class="chapter-item expanded "><a href="../is/index.html"><strong aria-hidden="true">20.</strong> Icelandic (is)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../is/style.html"><strong aria-hidden="true">20.1.</strong> Style</a></li><li class="chapter-item expanded "><a href="../is/brandnames.html"><strong aria-hidden="true">20.2.</strong> Brand Names</a></li><li class="chapter-item expanded "><a href="../is/term.html"><strong aria-hidden="true">20.3.</strong> Terminology</a></li><li class="chapter-item expanded "><a href="../is/ug.html"><strong aria-hidden="true">20.4.</strong> Units and Grammar</a></li><li class="chapter-item expanded "><a href="../is/general.html"><strong aria-hidden="true">20.5.</strong> General Mozilla L10n Style</a></li></ol></li><li class="chapter-item expanded "><a href="../id/index.html"><strong aria-hidden="true">21.</strong> Indonesian (id)</a></li><li class="chapter-item expanded "><a href="../ig/index.html"><strong aria-hidden="true">22.</strong> Igbo (ig)</a></li><li class="chapter-item expanded "><a href="../ga-IE/index.html"><strong aria-hidden="true">23.</strong> Irish (ga-IE)</a></li><li class="chapter-item expanded "><a href="../it/index.html"><strong aria-hidden="true">24.</strong> Italian (it)</a></li><li class="chapter-item expanded "><a href="../ja/index.html"><strong aria-hidden="true">25.</strong> Japanese (ja)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ja/l10nguideline.html"><strong aria-hidden="true">25.1.</strong> L10n Guideline</a></li><li class="chapter-item expanded "><a href="../ja/editorialguideline.html"><strong aria-hidden="true">25.2.</strong> Editorial Guideline</a></li></ol></li><li class="chapter-item expanded "><a href="../ko/index.html" class="active"><strong aria-hidden="true">26.</strong> Korean (ko)</a></li><li class="chapter-item expanded "><a href="../lo/index.html"><strong aria-hidden="true">27.</strong> Lao (lo)</a></li><li class="chapter-item expanded "><a href="../mk/index.html"><strong aria-hidden="true">28.</strong> Macedonian (mk)</a></li><li class="chapter-item expanded "><a href="../mg/index.html"><strong aria-hidden="true">29.</strong> Malagasy (mg)</a></li><li class="chapter-item expanded "><a href="../mr/index.html"><strong aria-hidden="true">30.</strong> Marathi (mr)</a></li><li class="chapter-item expanded "><a href="../pl/index.html"><strong aria-hidden="true">31.</strong> Polish (pl)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../pl/sumo.html"><strong aria-hidden="true">31.1.</strong> SUMO Style Guide</a></li></ol></li><li class="chapter-item expanded "><a href="../pt-BR/index.html"><strong aria-hidden="true">32.</strong> Portuguese (pt-BR)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../pt-BR/general.html"><strong aria-hidden="true">32.1.</strong> General Style Guide</a></li><li class="chapter-item expanded "><a href="../pt-BR/glossary.html"><strong aria-hidden="true">32.2.</strong> Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="../ro/index.html"><strong aria-hidden="true">33.</strong> Romanian (ro)</a></li><li class="chapter-item expanded "><a href="../ru/index.html"><strong aria-hidden="true">34.</strong> Russian (ru)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ru/firefox_marketing.html"><strong aria-hidden="true">34.1.</strong> Marketing guide to Firefox localization</a></li></ol></li><li class="chapter-item expanded "><a href="../gd/index.html"><strong aria-hidden="true">35.</strong> Scottish Gaelic (gd)</a></li><li class="chapter-item expanded "><a href="../sr/index.html"><strong aria-hidden="true">36.</strong> Serbian (sr)</a></li><li class="chapter-item expanded "><a href="../si/index.html"><strong aria-hidden="true">37.</strong> Sinhala (si)</a></li><li class="chapter-item expanded "><a href="../sl/index.html"><strong aria-hidden="true">38.</strong> Slovenian (sl)</a></li><li class="chapter-item expanded "><a href="../es/index.html"><strong aria-hidden="true">39.</strong> Spanish (es)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../es/sumo.html"><strong aria-hidden="true">39.1.</strong> SUMO Style Guide</a></li><li class="chapter-item expanded "><a href="../es/ff.html"><strong aria-hidden="true">39.2.</strong> Firefox Style Guide</a></li></ol></li><li class="chapter-item expanded "><a href="../es-CL/index.html"><strong aria-hidden="true">40.</strong> Spanish, Chile (es-CL)</a></li><li class="chapter-item expanded "><a href="../es-ES/index.html"><strong aria-hidden="true">41.</strong> Spanish, Spain (es-ES)</a></li><li class="chapter-item expanded "><a href="../sw/index.html"><strong aria-hidden="true">42.</strong> Swahili (sw)</a></li><li class="chapter-item expanded "><a href="../tl/index.html"><strong aria-hidden="true">43.</strong> Tagalog (tl)</a></li><li class="chapter-item expanded "><a href="../te/index.html"><strong aria-hidden="true">44.</strong> Telugu (te)</a></li><li class="chapter-item expanded "><a href="../th/index.html"><strong aria-hidden="true">45.</strong> Thai (th)</a></li><li class="chapter-item expanded "><a href="../tr/index.html"><strong aria-hidden="true">46.</strong> Turkish (tr)</a></li><li class="chapter-item expanded "><a href="../uk/index.html"><strong aria-hidden="true">47.</strong> Ukrainian (uk)</a></li><li class="chapter-item expanded "><a href="../ur/index.html"><strong aria-hidden="true">48.</strong> Urdu (ur)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ur/glossary.html"><strong aria-hidden="true">48.1.</strong> Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="../vi/index.html"><strong aria-hidden="true">49.</strong> Vietnamese (vi)</a></li><li class="chapter-item expanded "><a href="../wo/index.html"><strong aria-hidden="true">50.</strong> Wolof (wo)</a></li><li class="chapter-item expanded "><a href="../xh/index.html"><strong aria-hidden="true">51.</strong> Xhosa (xh)</a></li><li class="chapter-item expanded "><a href="../yo/index.html"><strong aria-hidden="true">52.</strong> Yoruba (yo)</a></li><li class="chapter-item expanded "><a href="../zu/index.html"><strong aria-hidden="true">53.</strong> Zulu (zu)</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Documentation for Mozilla localizers</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#style-guides-korean-ko" id="style-guides-korean-ko">Style Guides Korean (ko)</a></h1>
+<h2><a class="header" href="#mozilla-제품-번역-가이드" id="mozilla-제품-번역-가이드">Mozilla 제품 번역 가이드</a></h2>
+<p>전체글글쓴이: <a href="http://forums.mozilla.or.kr/memberlist.php?mode=viewprofile&amp;u=5580&amp;sid=490bc144a9490048549e0dbce0c055cd">Channy</a> » 2012 08 05 15:14 47</p>
+<p>Mozilla 제품 번역을 위한 인터페이스 및 메시지 등의 언어 리소스는 Firefox 나 Thunderbird 및 확장 기능 모두 동일합니다. dtd 파일과 properties 파일에 정의되어 있습니다 확장 기능 소스 코드 중. xul 파일에 사용되는 언어 리소스는 dtd 파일, js 파일에서 사용되는 언어 리소스는 properties라는 파일이라고 기억해두면 좋을 것입니다. 또한 확장 기능은. html 파일이 포함되어있는 경우도 있습니다.</p>
+<h2><a class="header" href="#1-리소스-파일의-형식" id="1-리소스-파일의-형식">1. 리소스 파일의 형식</a></h2>
+<p>리소스 파일은 각각 다음과 같은 형식입니다.</p>
+<p><em>dtd 파일 :</em> XML 형식으로 만들어져 있으므로 well-formed 되어야 합니다.</p>
+<p>코드: <a href="http://forums.mozilla.or.kr/viewtopic.php?f=15&amp;t=15050#">모두 선택</a>&lt;! - 주석 -&gt;</p>
+<p>&lt;! ENTITY entity.name &quot;표시할 문자열&quot;&gt; &lt;! - 주석 -&gt;</p>
+<p><em>properties 파일:</em> 코드: <a href="http://forums.mozilla.or.kr/viewtopic.php?f=15&amp;t=15050#">모두 선택</a># 주석 entity.name = 표시할 문자열</p>
+<p>위의 &quot;표시할 문자열&quot;부분을 번역 문자열입니다. 두 파일 모두 문자 코드는 UTF-8 (BOM 없음)에 저장합니다.</p>
+<p>응용 프로그램에서 읽혀지는 언어 리소스는 확장 패키지에 포함된 chrome.manifest 파일에 정의되어 있으며, 각 로케일 이름 폴더로 저장되고 있습니다.</p>
+<p>Mozilla 제품의 리소스 파일 위치는 각 모듈에 따라 위치가 정의됩니다.</p>
+<ol>
+<li>Firefox: browser 폴더</li>
+<li>Thunderbird: mail, editor 폴더</li>
+<li>Firefox Mobile: mobile 폴더</li>
+<li>Sunbird: calendar 폴더</li>
+<li>공통 : toolkit, dom 폴더 등</li>
+</ol>
+<h2><a class="header" href="#2-메시지-번역-방법" id="2-메시지-번역-방법">2. 메시지 번역 방법</a></h2>
+<p>각 제품별로 메시지 번역 작업은 모두 aurora 단계에서 이루어집니다. 따라서, aurora 폴더가 기본적인 작업 폴더가 됩니다. Mercurial을 통해 자신의 작업 레포지터리를 만듭니다.</p>
+<p>코드: <a href="http://forums.mozilla.or.kr/viewtopic.php?f=15&amp;t=15050#">모두 선택</a>$ hg clone http://hg.mozilla.org/releases/l10n/mozilla-aurora/ko/</p>
+<p>번역할 파일 및 내용은 아래 위치에서 각 제품의 aurora 부분의 H/C 에서 C를 눌러 영문 및 한국어 비교 파일을 얻습니다.</p>
+<p><a href="https://l10n.mozilla.org/shipping/dashboard?locale=ko">https://l10n.mozilla.org/shipp ... ?locale=ko</a></p>
+<p>예를 들어, calendar 번역 작업을 하기 위해서는 cal-aurora의 작업 해야될 내역을 살펴봅니다. 테이블에서 H/C 필드가 있고 여기서 C를 누르면 아래와 같은 링크가 나옵니다.</p>
+<p><a href="https://l10n.mozilla.org/dashboard/compare?run=236897">https://l10n.mozilla.org/dashb ... run=236897</a></p>
+<p>각 영문 repo는 한국어 repo와 구조가 같습니다.</p>
+<ol>
+<li>Firefox, Mobile, Toolkit : <a href="http://hg.mozilla.org/releases/mozilla-aurora/file/xxx/browser/locales/en-US">http://hg.mozilla.org/releases/mozilla- ... ales/en-US</a></li>
+<li>Thunderbird, Sunbird, Editor:<a href="http://hg.mozilla.org/releases/comm-aurora/file/xxx/calendar/locales/en-US">http://hg.mozilla.org/releases/comm-aur ... ales/en-US</a></li>
+</ol>
+<h2><a class="header" href="#3-번역-작업-선정하기" id="3-번역-작업-선정하기">3. 번역 작업 선정하기</a></h2>
+<p>먼저 자신이 어떤 제품의 번역 작업을 할지 서로 결정을 합니다. 만일 cal-aurora 작업을 한다는 점을 다른 분들에게 알리는 버그를 만듭니다.</p>
+<p>각 버전 별 작업은 <a href="http://forums.mozilla.or.kr/viewtopic.php?f=15&amp;t=15040">viewtopic.php?f=15&amp;t=15040</a> 에 공지됩니다.</p>
+<ol>
+<li>버그 생성: <a href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations&amp;component=ko%20/%20Korean">https://bugzilla.mozilla.org/enter_bug. ... /%20Korean</a></li>
+<li>버그 제목에 &quot;Translation of calendar module for Aurora XX&quot; 이런식으로 넣습니다.</li>
+<li>버그 생성 후 Depend On: 에 Tracking bug의 번호를 입력해서 버그 연결을 합니다.</li>
+</ol>
+<h2><a class="header" href="#4-번역-하기" id="4-번역-하기">4. 번역 하기</a></h2>
+<p>만약 여러분이 calendar 제품을 번역하겠다고 한다면, 첫번째 번역할 스트링은 ko/calendar/chrome/calendar/calendar-event-dialog.dtd에 있는
+event.attachments.menubutton.label이며, 첫번째 작업할 파일은 아래 파일이 될 것입니다.
+<a href="http://hg.mozilla.org/releases/comm-aurora/file/3a5ec8e368d2/calendar/locales/en-US/chrome/calendar/calendar-event-dialog.dtd">http://hg.mozilla.org/releases/comm-aur ... dialog.dtd</a></p>
+<p>작업할 위치의 파일은 ko/calendar/chrome/calendar/calendar-event-dialog.dtd가 됩니다.</p>
+<p>작업 파일에는 아래 코드가 없을 것입니다. 따라서 번역 후, 추가를 하면 됩니다.
+accesskey 같은 경우는 번역 안하고 추가만 하면 됩니다.</p>
+<p>코드: <a href="http://forums.mozilla.or.kr/viewtopic.php?f=15&amp;t=15050#">모두 선택</a><!ENTITY event.attachments.menubutton.label               "첨부파일"></p>
+<p>번역할 용어들은 애매한 경우, 이전에 번역된 메시지에서 검색해서 찾으면 도움이 됩니다. 아래 사이트에서 영문과 한글 용어를 검색해 보실 수 있습니다.
+<a href="http://transvision.mozfr.org/">http://transvision.mozfr.org/</a></p>
+<p>작업해야 할 각 파일의 번역 작업이 끝나면, 리뷰를 받기위한 diff 파일을 만듭니다.</p>
+<p>코드: <a href="http://forums.mozilla.or.kr/viewtopic.php?f=15&amp;t=15050#">모두 선택</a>$ hg diff &gt; cal-aurora-16.patch</p>
+<p>위와 같이 patch 파일을 만든 후, 앞에서 만들었던 버그에 파일 첨부(attach)를 하시면 됩니다. 업로드시 patch라는 마크에 표시하시면 자동으로 패치로 인식합니다.</p>
+<p>예를 들어, <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=773786">https://bugzilla.mozilla.org/show_bug.cgi?id=773786</a> 에 첨부된 patch를 참고하세요. 그리고 review flag를 ? 로 하시고, <a href="mailto:channy@mozilla.or.kr">channy@mozilla.or.kr</a> 을 지정해 주세요. 그러면 제가 patch를 리뷰하고 반영을 해드리게 됩니다.</p>
+<p>더 궁금한 점이 있으시면 댓글 달아 주십시오.</p>
+<hr />
+<p><strong>Channy</strong>
+해커</p>
+<p><strong>전체글:</strong> 1005</p>
+<p><strong>가입일:</strong> 2002 03 26 17:41 59</p>
+<p><strong>사는 곳:</strong> 아름다운 제주</p>
+<p><a href="http://forums.mozilla.or.kr/ucp.php?i=pm&amp;mode=compose&amp;action=quotepost&amp;p=46145&amp;sid=490bc144a9490048549e0dbce0c055cd">쪽지 보내기</a></p>
+<p><a href="http://channy.creation.net/">웹사이트</a></p>
+<p><em>Are you creative? <a href="http://www.creation.net/">http://www.creation.net</a></em></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../ja/editorialguideline.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../lo/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../ja/editorialguideline.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../lo/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
