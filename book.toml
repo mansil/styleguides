@@ -1,7 +1,7 @@
 [book]
 multilingual = false
 src = "docs"
-title = "Documentation for Mozilla localizers"
+title = "Documentação para os Tradutores da Mozilla"
 
 [preprocessor.toc]
 command = "mdbook-toc"
