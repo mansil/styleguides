@@ -1,10 +1,10 @@
-# Mozilla general localization style guide
+# Guia de Estilo de Tradução Geral da Mozilla
 
  <!-- toc -->
 
-This style guide provides the basic guidelines for translating Mozilla products. This guide should be used in coordination with a locale-specific style guide for your language.
+Este guia de estilo fornece as linhas diretrizes básicas para a tradução dos produtos da Mozilla. Este guia deverá ser utilizado em coordenação com o guia de estilo do idioma específico para o seu idioma.
 
-## Fluency
+## Fluência
 
 To produce a fluent translation, not only should the translation follow the language’s standard grammar, punctuation, and spelling rules, but it should avoid being ambiguous, incoherent, inconsistent or unintelligible.
 
@@ -14,7 +14,7 @@ Inconsistency can pop up in many forms. A translator must be consistent in their
 
 Finally, there are times that a translation simply doesn’t make sense. It’s hard to put your finger on what exactly is wrong with it, but you know it is unintelligible and not fluent. While this is uncommon, it’s important to report these unintelligible translations and offer suggestions to correct them.
 
-## Meaning-based translation
+## Tradução baseada em significado
 
 When it comes to translation, meaning is everything. A translator needs to understand the source text’s meaning exactly. You then find its most closely linked equivalent in your own language, without adding or subtracting meaning in your translation. Finding meaning-based equivalents between languages can be difficult. To help concentrate your thoughts, ask yourself questions like:
 
@@ -24,20 +24,20 @@ When it comes to translation, meaning is everything. A translator needs to under
 
 Sometimes translation memory and machine translation tools can offer bad suggestions for a translation. If you use either as part of your translation workflow, make sure to correct the suggestions before submitting them. Avoid literal translation at all costs. Watch out for words that might sound or look the same between English and your language, but have a different meaning.
 
-### Translating culture-specific references
+### Traduzir referências específicas da cultura
 
 At times there will be English content included in Mozilla products or web projects (e.g., marketing campaigns) that makes references to American culture and concepts. When translating these, it is best to find an equivalent cultural reference within your own culture that accurately conveys the meaning of the English reference. For example, an American might say, `Good job, home run!` A `home run` is a baseball reference for a successful outcome. An appropriate translation would be an equivalent metaphor within your culture. Using soccer as an example, you might translate `Good job, home run!` into `Good job, nice goal!` in your language.
 
-### Units and measurement
+### Unidades e medições
 
 The translation should strive to achieve proper unit conversions for currency, measurements, etc. for the target audience. Source strings will use the imperial system (e.g., miles, pounds, feet, gallons, etc.). Target translations should convert imperial metrics to their measurement system when the measurement is provided as a number. If the measurement is provided as a variable, use the translation for the imperial system unit.
 
-| Example | Source | Translation |
+| Exemplo | Fonte | Tradução |
 | - | - | - |
-| Number as string | `320 miles` | `500 meters` |
-| Number as variable | `%d miles` | `%d miles` |
+| Número como expressão | `320 milhas` | `500 metros` |
+| Número como variável | `%d milhas` | `%d milhas` |
 
-## Terminology
+## Terminologia
 
 You should be consistent in the use of terminology in your language. These term bases could be developed and approved by the community, or leveraged from another party that adhere to national, international or local standards for software and internet terminology. Avoid inconsistent use of terminology within the project, within term base, or across all of your projects and using terminology from another subject matter (e.g., don’t use medical terminology in Firefox).
 
@@ -49,13 +49,13 @@ Here are a few things to keep in mind when managing your team’s terminology:
 * Will you use loan words from another language or coin new terms in your language to maintain language purity? Is there government requirement or policy to encourage creating new terms for new concepts, or will loan words be sufficient to reach broader masses and expedite new technology adoption?
 * If there are two acceptable scripts commonly used by the general public, what is the commonly used script on the web or government sites? What is the script used by major web technology companies?
 
-### Abbreviations and acronyms
+### Abreviações e acrónimos
 
 Abbreviations and acronyms, should come from either a standard reference (like a dictionary of abbreviations) or should follow your language’s rules for creating abbreviations and acronyms. Once used, abbreviations and acronyms must remain consistent every place that it is used in the translation.
 
-## Text that should not be translated
+## Texto que não deverá ser traduzido
 
-### Shortcuts and accesskeys
+### Atalhos e teclas de acesso
 
 In Firefox and other software it’s possible to use keyboard shortcuts to invoke a specific command. For example, to open a file in Firefox you can press the combination of keys CTRL+O (Cmd+O on Mac). The accelerator key depends on the operative system, but the letter itself is normally localizable. This is what is called a shortcut, or commandkey. For example, the `Open File…` menu item is stored as
 
@@ -75,27 +75,27 @@ One important thing to determine is if, for your locale, it makes sense to have 
 
 Accesskeys, like commandkeys, have their own lines within .dtd and .properties files and are usually identified by .accesskey in the string ID.
 
-### Variables
+### Variáveis
 
 Variables should never be translated. You can recognize a variable within a string by its beginning with a specific character (e.g., `$`, `#`, `%`, etc.) followed by a combination of words without spacing. For example, `$BrandShortName` and `%S` are variables. You can move a variable around within a string, if the translation of the string requires it.
 
-#### Cross-references and links
+#### Referências cruzadas e hiperligações
 
 Cross-references (or links) must be consistently used within a translation. If a text contains a hyperlink URL to a support article in English, the translation should also contain a hyperlink to a translation of that support article (if available) or the English version. Links should not redirect to other pages nor should they be broken and unusable.
 
-### Brands, copyright, and trademark
+### Marcas, direitos de autor, e marcas registadas
 
 Trademarks present a special case for localization as they have legal as well as semantic significance. To ensure that localization does not undermine Mozilla’s trademarks rights, please follow these rules when translating content that includes trademarks.
 
 This page has a [list of Mozilla trademarks](https://www.mozilla.org/en-US/foundation/trademarks/list/).
 
-#### Use in local languages with non-Latin script / permissible transcriptions
+#### Utilizar em idioams locais sem script não Latim / transcrições admissíveis
 
 When your local language is not written in the Latin alphabet and you use a Mozilla trademark in a headline, a prominent position, or for the first time on a site, you should always use it in its original form in Latin script (e.g. Mozilla, Firefox, Thunderbird). Mozilla trademarks should therefore not be altered in prominent UI elements. For example, do not alter “Firefox” in the first-run menus, or for the first use of the term in landing pages and legal notices.
 
 If you use the trademarks in a referential context after that, within continuous text, you may use a transcribed local language version. If a transcribed local version is used, each community must take care to select a single version and use it consistently. This should be in the form that is the most used and accepted expression in digital/print media.
 
-Correct example:
+Exemplo correto:
 
 > Finally released: the Firefox Quantum Update!
 > In November 2017, Mozilla has released the latest version of its Firefox software. […]
@@ -103,7 +103,7 @@ Correct example:
 > Наконец выпущен: обновление квантового Firefox Quantum!
 > В ноябре 2017 года Mozilla выпустила последнюю версию своего программного обеспечения для Файрфокс. […]
 
-Incorrect example:
+Exemplo incorreto:
 
 > Finally released: the Firefox Quantum Update!
 > In November 2017, Mozilla has released the latest version of its Firefox software. […]
@@ -111,35 +111,35 @@ Incorrect example:
 > Наконец выпущен: обновление квантового Файрфокс квантум!
 > В ноябре 2017 года Моцилла выпустила последнюю версию своего программного обеспечения для Файрфокс. […]
 
-#### Use in local languages with Latin script
+#### Utilizar em idiomas locais com script em Latim
 
 When your local language is written in the Latin alphabet, you should always use Mozilla’s trademarks in their original Latin script form. This also applies if the respective terms should be pronounced differently in your local language. You should therefore not modify the original Mozilla trademarks in order to reflect or facilitate local pronunciation.
 
-Correct example:
+Exemplo correto:
 
 > In November 2017, Mozilla has released the latest version of its Firefox software. […]
 
 > W listopadzie 2017 roku Mozilla wydała najnowszą wersję swojego oprogramowania Firefox. […]
 
-Incorrect example:
+Exemplo incorreto:
 
 > In November 2017, Mozilla has released the latest version of its Firefox software. […]
 
 > W listopadzie 2017 roku Mozilla wydała najnowszą wersję swojego oprogramowania Firefoks, […]
 
-#### Translations of trademarks
+#### Traduções de marcas registadas
 
 Always use Mozilla’s trademarks in their original wording, even if you are transcribing them into your local non-Latin alphabet (per the guidance under point 1 above). For example, do not translate Firefox into another language by using words that have the meaning of “fire” and “fox” in that language.[1]
 
 If you want to explain how a Mozilla trademark is pronounced in your local language or what it means if translated literally, you may do so in a referential context only. When doing so, you should also state expressly that you want to explain the meaning or pronunciation of the term.
 
-Correct example:
+Exemplo correto:
 
 > The newest version of the Mozilla Firefox software – which literally means “fire fox” – outpaces its opponents and lives up to its name. […]
 
 > Die neueste Version der Firefox Software – was wörtlich übersetzt “Feuerfuchs” bedeutet – überholt all ihre Konkurrenten und macht ihrem Namen alle Ehre. […]
 
-Incorrect example:
+Exemplo incorreto:
 
 > The newest version of Mozilla’s Firefox software outpaces its opponents and lives up to its name.
 
@@ -147,7 +147,7 @@ Incorrect example:
 
 [1] The only exception to this rule is the Chinese characters for “Fire” and “Fox” together. Mozilla has a registered trademark on these characters (China Reg. No. 16199671A).
 
-#### Declensions
+#### Decadências
 
 As noted above, when you use a Mozilla trademark in a headline, a prominent page position or UI element (such as first-run application menus or the first use of the term in landing pages and legal notices), or for the first time on a site, you should always use it in its original, unaltered form.
 
@@ -160,9 +160,9 @@ In other cases, avoid using declension on trademarks.
 
 Never use Mozilla trademarks as verbs and do not coin verbs out of Mozilla trademarks.
 
-## Copy rules
+## Regras de Copiar
 
-### Title Case
+### Letra do Título
 
 Title case is a capitalization style that includes the following rules:
 
@@ -173,25 +173,25 @@ Title case is a capitalization style that includes the following rules:
 * Do not capitalize articles, prepositions of three or fewer letters, and conjunctions of three or fewer letters (but not if).
 * A note about hyphens: capitalize the second word in a hyphenated compound if it would normally be capitalized as a single word according to title case rules. So, capitalize the S in Quick-Search Options, lowercase the o in Add-on Choices.
 
-Example: `All Your Activity`.
+Exemplo: `All Your Activity`.
 
-### Sentence Case
+### Letra da Frase
 
 Sentence case is a capitalization style where the first word of the text element is capitalized as well as any words that are normally capitalized.
 
 Example: `Sign in to continue to Firefox Sync`.
 
-### All Caps
+### Tudo em Maiúsculas
 
 All Caps is a style where every letter is capitalized.
 
-Example: `CANCEL`.
+Exemplo: `CANCEL`.
 
-### User interface elements
+### Elementos da interface do utilizador
 
-* **Titles**: should be brief and precise. Localizers can assume that source content reaches 2/3 of the total available line space. This allows localization text to expand and not be truncated or resolved through ellipsis. Title on the final page (meaning no more click through) should allow enough room to display full text.
-* **Headlines**: which are the more conversational titles and subtitles that appear in instructional text screens, tours and form pages
-* **Buttons**: capitalize the first letter of each word. Limit to one or two words. Use verbs that precisely describe the button’s action. For example, `Cancel`, `Clear History`, `Add Email`, `Select All`, etc.
-* **Value Selector Lists**: capitalize the first letter of the first word and the first letter of any proper nouns. Limit to one or two words.
-* **Articles**: avoid them where possible. Articles (such as the word `the` in English) should be avoided wherever possible. User interface elements have limited space available for text. Avoiding articles will help ensure that your translations will be accommodated within the user interface.
-* **Ellipsis**: ellipsis are often inserted automatically in the UI where strings are truncated. Ellipsis should only be used at high level of UI pages, but not be on the final page (after a series of click-through) where detailed instruction is given. Ellipsis should not be used as a way to solve truncation issue. Focus on making the UI short and precise. The sequence of the sentence structure in another language may not translate well, when a sentence is half finished as such.
+* **Títulos**: should be brief and precise. Localizers can assume that source content reaches 2/3 of the total available line space. This allows localization text to expand and not be truncated or resolved through ellipsis. Title on the final page (meaning no more click through) should allow enough room to display full text.
+* **Cabeçalhos**: which are the more conversational titles and subtitles that appear in instructional text screens, tours and form pages
+* **Botões**: capitalize the first letter of each word. Limit to one or two words. Use verbs that precisely describe the button’s action. For example, `Cancel`, `Clear History`, `Add Email`, `Select All`, etc.
+* **Listas de Seletor de valor**: capitalize the first letter of the first word and the first letter of any proper nouns. Limit to one or two words.
+* **Artigos**: avoid them where possible. Articles (such as the word `the` in English) should be avoided wherever possible. User interface elements have limited space available for text. Avoiding articles will help ensure that your translations will be accommodated within the user interface.
+* **Elipses**: ellipsis are often inserted automatically in the UI where strings are truncated. Ellipsis should only be used at high level of UI pages, but not be on the final page (after a series of click-through) where detailed instruction is given. Ellipsis should not be used as a way to solve truncation issue. Focus on making the UI short and precise. The sequence of the sentence structure in another language may not translate well, when a sentence is half finished as such.
