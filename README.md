@@ -1,29 +1,29 @@
-# Style Guides
+# Guias de Estilo
 
-This repository is used to store style guides for Mozilla communities. All localization style guides and related documents are listed in [docs/SUMMARY.md](docs/SUMMARY.md).
+Este repositório é utilizado para guardar os guias de estilo para as comunidades da Mozilla. Todos os guias de estilo de tradução e documentos relacionados são listados em [docs/SUMMARY.md](docs/SUMMARY.md).
 
-If you’re reading these pages on GitHub, a version with improved readability and search capabilities is available [here](https://mozilla-l10n.github.io/styleguides).
+Se está a ler estas páginas no GitHub, está disponível uma versão com legibilidade melhorada e capacidades de pesquisa [aqui](https://mozilla-l10n.github.io/styleguides).
 
-## Updating the documentation
+## Atualizar a documentação
 
-Simply open a pull request adding the new file or updating an existing document. Make sure to follow [these style guidelines](https://github.com/mozilla-l10n/documentation/blob/master/src/misc/documentation_styleguide.md), and note that all pull requests need to be reviewed before merging. The instructions for creating new community style guides are part of the [guidelines for community style guides](src/guidelines/). Please also run the following commands to ensure the files are correctly formatted.
+Basta abrir um pedido “pull” adicionando o novo ficheiro ou atualizando um documento existente. Certifique-se que segue [estas linhas diretrizes do estilo](https://github.com/mozilla-l10n/documentation/blob/master/src/misc/documentation_styleguide.md), e note que todos os pedidos de “pull” precisam de ser revistos antes de serem unidos. As instruções para a criação de novos guias de estilo da comunidade são parte das [linhas diretrizes para os guias de estilo da comunidade](src/guidelines/). Por favor, execute também os seguintes comandos para assegurar que os ficheiros são formatos corretamente.
 
 ```
 $ npm install
 $ npm test
 ```
 
-## GitHub Pages
+## Páginas do GitHub
 
-A version with improved readibility and search is built automatically via Travis and [mdBook](https://github.com/rust-lang/mdBook/). Updates are pushed to the `gh-pages` branch and available via GitHub Pages [here](https://mozilla-l10n.github.io/styleguides).
+Uma versão com legibilidade melhorada e pesquisa é criada automaticamente via Travis e [mdBook](https://github.com/rust-lang/mdBook/). As atualizações são submetidas (pushed) para o ramo `gh-pages` e disponível através das Páginas do GitHub [aqui](https://mozilla-l10n.github.io/styleguides).
 
-If you want to build and preview these pages locally,  [install Rust and cargo](https://www.rust-lang.org/learn/get-started) and then run the following commands from the root of the repository:
+Se quiser criar e pré-visualziar estas páginas localmente, [instale Rust e Cargo](https://www.rust-lang.org/learn/get-started) e depois execute os comandos seguintes na raiz do repositório:
 
 ```
 $ cargo install --vers "^0.2" mdbook-toc
 $ mdbook serve
 ```
 
-[mdbook-toc](https://github.com/badboy/mdbook-toc/) is used as a preprocessor, and will install the correct version of mdBook as a dependency.
+[mdbook-toc](https://github.com/badboy/mdbook-toc/) é utilizado como um pré-processador, e irá instalar a versão atual de mdBook como uma dependência.
 
-If you want content to appear on mdBook, it needs to be listed in [docs/SUMMARY.md](docs/SUMMARY.md).
+Se quiser que o conteúdo apareça no mdBook, este precisa de ser listado em [docs/SUMMARY.md](docs/SUMMARY.md).
