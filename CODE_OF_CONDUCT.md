@@ -1,17 +1,17 @@
-# Community Participation Guidelines
+# Linhas Diretrizes de Participatação da Comunidade
 
-This repository is governed by Mozilla's code of conduct and etiquette guidelines.
+Este repositório é administrado linhas diretrizes de etiqueta e código de conduta da Mozilla.
 
-For more details, please read the
-[Mozilla Community Participation Guidelines](https://www.mozilla.org/about/governance/policies/participation/).
+Para mais detalhes, por favor leia as 
+[Linhas Diretrizes de Participação da Comunidade da Mozilla](https://www.mozilla.org/about/governance/policies/participation/).
 
-## How to Report
+## Como Reportar
 
-For more information on how to report violations of the Community Participation Guidelines, please read our '[How to Report](https://www.mozilla.org/about/governance/policies/participation/reporting/)' page.
+Para mais informação sobre como reportar violações das «Linhas Diretrizes de participação da Comunidade», por favor, leia a página de '[Como Reportar](https://www.mozilla.org/about/governance/policies/participation/reporting/)'.
 
 <!--
-## Project Specific Etiquette
+## Etiqueta Específica do Projeto
 
-In some cases, there will be additional project etiquette i.e.: (https://bugzilla.mozilla.org/page.cgi?id=etiquette.html).
-Please update for your project.
+Em alguns casos, poderão existir etiquetas adicionais de projeto, por exemplo: (https://bugzilla.mozilla.org/page.cgi?id=etiquette.html).
+Por favor, atualize o seu projeto.
 -->
