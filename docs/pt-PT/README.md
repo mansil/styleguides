@@ -1,3 +1,3 @@
 # Portuguese (Portugal) (pt-PT)
 
-* [Marketing guide to Firefox localization](firefox_marketing.md)
+* [Guia de Marketing para a tradução do Firefox](firefox_marketing.md)
